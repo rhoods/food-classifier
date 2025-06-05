@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "food-classifier"
+version = "0.1.0"
+description = "Un classifieur d'images pour de la street food"
+authors = ["Dylan <ton.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "*"
+torchvision = "*"
+matplotlib = "*"
+pandas = "*"
+scikit-learn = "*"
+
+[tool.poetry.group.dev.dependencies]
+jupyterlab = "*"
+ipykernel = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

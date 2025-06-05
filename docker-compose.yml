@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+    food-classifier:
+          build: .
+          container_name: food-classifier
+          volumes:
+            - .:/food-classifier
+          working_dir: /food-classifier
+          command: poetry run python food_classifier/train.py
